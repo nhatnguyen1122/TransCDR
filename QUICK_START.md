@@ -26,12 +26,10 @@ data/omics_data/
     └── gene_cell_matrix_promoter_filter_na.csv
 ```
 
-And drug encoding data:
-```
-data/ESPF/
-├── drug_codes_chembl_freq_1500.txt
-└── subword_units_map_chembl_freq_1500.csv
-```
+**Note about ESPF:** You do **NOT** need ESPF files if you use pre-trained models (recommended).
+ESPF is only required if using `--drug_encoder Transformer --pre_train False` (not recommended).
+
+See `ESPF_EXPLAINED.md` for details.
 
 ### Step 2: Modify model.py
 
